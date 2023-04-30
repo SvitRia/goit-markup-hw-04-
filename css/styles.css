@@ -346,17 +346,17 @@ align-items: flex-start;
 flex-basis: calc*((100% - 72px)/4);
 }
 
-.feature-list-box {
+.feature-box {
     display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px 100px;
-gap: 10px;
-max-width: 264px;
- background: var(--backgraund-light);
-border-radius: 4px;
- 
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--backgraund-light);
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
+
+ 
 .feature-item-tittle {
 margin-bottom: 8px;
 }
