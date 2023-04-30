@@ -521,6 +521,7 @@ height: 40px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    gap: 120px;
 
 }
 .footer-container {
@@ -528,8 +529,6 @@ height: 40px;
     gap: 16px;
     background: var(--backgraund-dark);
     padding: 0px;
-
-    margin-right: 120px;
     margin-left: 156px;
 }
 .footer-reset {
