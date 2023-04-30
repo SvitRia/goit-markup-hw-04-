@@ -12,7 +12,8 @@
 --backgraund-light: #f4f4fD;
 --backgraund-dark: #2E2F42;
 --leinercoolor: #E7E9FC;
---background-green: #31D0AA; ;
+--background-green: #31D0AA; 
+--helper-text: #8E8F99;
 }
 * {
     box-sizing: border-box;
@@ -29,6 +30,7 @@ body {
     text-transform: none;
     color: var(--text-color);
     background-color: var(--white-color);
+    
 }
  /*--reset start--*/
 h1,
@@ -85,7 +87,7 @@ div {
 	font-family:var(--primary-font);
 	font-weight: 700;
 	font-style: normal;
-	line-height: 1.11;
+	line-height: 1.1;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	text-transform: capitalize;
@@ -412,7 +414,7 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-item-container {
    
-padding: 32px 16px;
+padding: 32px 0px;
 max-width: 232px;
 
 }
@@ -449,6 +451,10 @@ height: 40px;
   
     background: var(--btn-color-iris);
 }
+.social-item-box:hover,
+.social-item-box:focus {
+    background-color: var(--btn-color-okean);
+}
 .link-icon {
     fill: var(--backgraund-light);
 }
@@ -469,36 +475,57 @@ height: 40px;
 
 }
 /*---Customers--*/
+.customers-tittle {
+    margin-bottom: 72px;
+}
 .section-customer {
     padding: 120px 0px;
 }
 .customers-container {
-   margin-top: 72px;
+  
     padding: 0px;
     gap: 24px;
    
 }
 .customers-box {
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
     padding: 16px 32px;
-
-    border: 1px solid var(--leinercoolor);
-border-radius: 4px;
+    
 }
-.customers-box:hover,
-.customers-box:focus {
+.customers-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100;
+    border: 1px solid var(--leinercoolor);
+    border-radius: 4px;
+    color: var(--helper-text);
+}
+.customers-item:hover,
+.customers-item:focus {
     border: 1px solid var(--btn-color-okean);
+    color: var(--btn-color-okean);
 
+}
+.logo-customers {
+    fill: currentColor;
 }
 .footer {
-    display: flex;
-    flex-direction: row;
+    
     width: 1440px;
     margin: 0px auto;
     padding: 100px 0px;
     background: var(--backgraund-dark)
     }
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+align-items: baseline;
+gap: 120px;
+}
 .footer-container {
     width: 264px;
     gap: 16px;
@@ -516,7 +543,7 @@ color: var(--white-color);
 }
 .container-footer-social {
     display: inline-block;
-    margin-left: 120px;
+    
 }
 .footer-social {
     color: var(--white-color);
@@ -557,6 +584,13 @@ display: flex;
 flex-wrap: wrap;
 row-gap: 48px;
 column-gap: 24px;
+}
+.link-portfolio {
+    display: block;
+}
+.link-portfolio:hover,
+.link-portfolio:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 .card-box {
 width: calc((100% - 48px)/3); 
