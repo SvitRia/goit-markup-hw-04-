@@ -529,7 +529,7 @@ height: 40px;
     gap: 16px;
     background: var(--backgraund-dark);
     padding: 0px;
-    margin-right: 120px;
+   gap: 120px;
     margin-left: 156px;
 }
 .footer-reset {
@@ -541,8 +541,6 @@ padding: 0px;
 color: var(--white-color);
 }
 .container-footer-social {
-  
-    gap: 16px;
     
 }
 .social-footerlink-container {
@@ -553,8 +551,8 @@ color: var(--white-color);
     
     gap: 16px;
     margin-top: 8px;
-    
-   height: 40px; }
+    height: 40px; }
+
 .footer-social {
     color: var(--white-color);
     margin-bottom: 16px;
