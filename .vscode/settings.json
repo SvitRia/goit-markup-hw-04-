@@ -1,6 +1,6 @@
 {
     "prettier.bracketSameLine": true 
- },
+,
  
  "editor.tokenColorCustomizations": {
   "textMateRules": [
@@ -48,3 +48,4 @@
     // }
   ]
 },
+}
